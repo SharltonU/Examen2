@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en-US" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalle de Jugador</title>
+</head>
+<body>
+<h1>Detalle de jugador</h1>
+<ul>
+    <li><strong>Nombre:</strong> <span th:text="${futbolista.nombre}">Nombre</span></li>
+    <li><strong>Primer apellido:</strong> <span th:text="${futbolista.apellido1}">Primer apellido</span></li>
+    <li><strong>Segundo apellido: </strong> <span th:text="${futbolista.apellido2}">Segundo apellido</span></li>
+    <li><strong>Email:</strong> <span th:text="${futbolista.email}">Email</span></li>
+    <li><strong>Telefono:</strong> <span th:text="${futbolista.telefono}">Telefono</span></li>
+    <li><strong>Rama: </strong> <span th:text="${futbolista.rama}">Rama</span></li>
+    <li><strong>Posición:</strong> <span th:text="${futbolista.posicion}">Posicion</span></li>
+    <li><strong>Dirección:</strong> <span th:text="${futbolista.direccion}">Direccion</span></li>
+    <li><strong>Provincia:</strong> <span th:text="${futbolista.provincia}">Provincia</span></li>
+    <li><strong>Canton:</strong> <span th:text="${futbolista.canton}">Canton</span></li>
+    <li><strong>Distrito:</strong> <span th:text="${futbolista.distrito}">Distrito</span></li>
+    <li><strong>Altura:</strong> <span th:text="${futbolista.estatura}">Estatura</span></li>
+    <li><strong>Peso:</strong> <span th:text="${futbolista.peso}">Peso</span></li>
+    <li><strong>Nacimiento:</strong> <span th:text="${futbolista.fechaNacimiento}">fecha Nacimiento</span></li>
+
+</ul>
+<a href="/">Volver al inicio</a>
+</body>
+</html>

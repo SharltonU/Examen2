@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Actualizar</title>
+</head>
+<body>
+<h1>Actualizar información del fubolista</h1>
+
+<p>Actualizar infomación del fubolista <span th:text="${original.nombre}">Nombre</span> <span th:text="${original.apellido1}">Apellido</span> </p>
+    <form action="#" th:action="@{/futbolistas/actualizar/{id}(id=${original.id})}" th:object="${futbolista}" method="post"/>
+        <label for="direccion">Dirección</label>
+        <input type="text" th:field="*{futbolista.direccion}" id="direccion">
+        <br>
+        <br>
+        <label for="provincia">Provincia</label>
+        <input type="text" th:field="*{futbolista.provincia}" id="provincia">
+        <br>
+        <br>
+        <label for="canton">Canton</label>
+        <input type="text" th:field="*{futbolista.canton}" id="canton">
+        <br>
+        <br>
+        <label for="distrito">Distrito</label>
+        <input type="text" th:field="*{futbolista.distrito}" id="distrito">
+        <br>
+        <br>
+        <label for="telefono">Teléfono</label>
+        <input type="text" th:field="*{futbolista.telefono}" id="telefono">
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <input type="text" th:field="*{futbolista.email}" id="email">
+        <br>
+        <br>
+        <label for="peso">Peso</label>
+        <input type="text" th:field="*{futbolista.peso}" id="peso">
+        <br>
+        <br>
+        <input type="submit" value="Actualizar">
+    </form>
+    <br>
+    <a href="/">Volver al inicio</a>
+</body>
+</html>
